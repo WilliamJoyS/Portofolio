@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "media.css">
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class = "logo">William Joy S.</div>
+            <div>
+                <ul class = "nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="https://github.com/WilliamJoyS">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav id = "hamburger-nav">
+        <div class = "logo">William Joy S.</div>
+        <div class = "hamburger-menu">
+            <div class = "hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "menu-links">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="https://github.com/WilliamJoyS" target="_blank" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+    <div class="profilephoto">
+        <img src="FOTO/mukasaya2.png" alt="joy" class="face-image">
+    </div>
+
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">William Joy S.</h1>
+        <p class="section__text__p2">Frontend/Backend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('CV/CV Joy.docx.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="FOTO/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/william-susanto-b449891a4'"
+          />
+          <img
+            src="FOTO/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/WilliamJoyS'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class = "section__text__p1"Get To Know More></p>
+      <h1 class = "title">About Me</h1>
+      <div class= "section-container">
+          <div class="game-container">
+            <iframe src="Game/index.html" width="1050" height="595" frameborder="0"></iframe>
+            <div class="text-container">
+              <p>
+                Hi there! I'm William Joy Susanto, a passionate Computer Science student specializes in Data Science. With a passion for Data Science, I excel in transforming raw data into actionable insights through
+                data analysis, machine learning, and predictive modeling. I am proficient in Python, R, and SQL, and have worked extensively with data visualization tools to deliver clear, impactful results. 
+                In addition to that, I have a strong foundation in web development, focusing on both frontend and backend technologies. From creating responsive user interfaces to ensuring robust
+                backend functionality,  I strive to build seamless, scalable web applications that solve real-world problems. My proficiency includes HTML, CSS, JavaScript and Databases like MySQL.
+                
+                I am driven by a continuous desire to innovate, learn, and stay at the forefront of technology.
+              </p>
+            </div>
+          </div>
+          
+          </div>
+
+      </div>
+      <div>
+    </section>
+
+    <footer id="contact">
+      <div class="footer-container">
+          <div class="footer-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:williamjoysusanto1@gmail.com">williamjoysusanto1@gmail.com</a>
+          </div>
+          <div class="footer-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+62 87729431589">+62 87729431589</a>
+          </div>
+      </div>
+  </footer>
+
+    <script src = "script.js"></script>
+</body>
+</html>
